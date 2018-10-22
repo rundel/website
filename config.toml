@@ -1,6 +1,6 @@
 baseurl = "/"
 title = ""
-copyright = "&copy; 2017 Colin Rundel"
+copyright = "&copy; 2018 Colin Rundel"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"

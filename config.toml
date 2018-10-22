@@ -1,0 +1,86 @@
+baseurl = "/"
+title = ""
+copyright = "&copy; 2017 Colin Rundel"
+theme = "academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  name = "Colin Rundel"
+  role = "Assistant Professor of the Practice"
+  organization = "Department of Statistical Science, Duke University"
+  organization_url = "https://www.stat.duke.edu"
+  avatar = "colin.png"
+  email = "rundel@gmail.com"
+  address = "204 Old Chemistry Building, Duke University, Durham, North Carolina, 27708, USA"
+  office_hours = "Monday 12:00 to 2:00 pm or by appointment"
+  phone = ""
+  skype = ""
+  telegram = ""
+
+  date_format = "January 2006"
+  math = true
+
+  highlight = true
+  highlight_languages = []
+  highlight_style = "github"
+
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
+ 
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:rundel@gmail.com"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/rundel"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/rundel"
+
+
+[[menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
+
+[[menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 2
+
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 3
+
+[[menu.main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 4
+
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 5
+ 
+# Configure the English version of the website.
+[languages.en]
+  languageCode = "en-us"

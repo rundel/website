@@ -8,9 +8,25 @@
 \usepackage{amssymb}
 \usepackage{lastpage}
 
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or Jan% 1
+  \or Feb% 2
+  \or Mar% 3
+  \or Apr% 4
+  \or May% 5
+  \or Jun% 6
+  \or Jul% 7
+  \or Aug% 8
+  \or Sep% 9
+  \or Oct% 10
+  \or Nov% 11
+  \or Dec% 12
+  \fi}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyfoot[C]{\footnotesize Page \thepage~of~\pageref{LastPage} \\ $\:$ \\ Revised July 2018}
+\fancyfoot[C]{~\\~\\ \hfill \footnotesize Page \thepage~of~\pageref{LastPage} \hfill Revised \MONTH~\the\year}
 
 \renewcommand{\headrulewidth}{0pt}
 
@@ -34,7 +50,7 @@
 \vspace{3mm}
 
 \section{\sc Research Interests}
-Applied spatial statistics with a focus on biological and ecological systems, Bayesian statistics, computational methods, statistics and computing pedagogy
+Applied spatial statistics with a focus on biological and ecological systems, Bayesian statistics, computational methods, statistics and computing education and pedagogy.
 
 \vspace{4mm}
 
@@ -58,7 +74,7 @@ California Institute of Technology
 \item[] B.S. in Biology, 2003
 \end{list1}
 
-\vspace{4mm}
+\vspace{3mm}
 
 %
 
@@ -66,29 +82,29 @@ California Institute of Technology
 
 Assistant Professor of the Practice \hfill June 2015 - Present \\
 {Department of Statistical Science}, Duke University \\
-\vspace{-0.25cm}
+\vspace{-0.5cm}
 
 Visiting Assistant Professor / Lecturer  \hfill January 2012 - May 2015 \\
 {Department of Statistical Science}, Duke University \\
-\vspace{-0.25cm}
+\vspace{-0.5cm}
 
-\vspace{-0.15cm}
+
 Postdoctoral Associate  \hfill July 2012 - April 2014 \\
 {Department of Statistical Science}, Duke University \\
+\vspace{-0.5cm}
 
-\vspace{-0.15cm}
 Graduate Student Researcher \hfill September 2010 - December 2011 \\
 {Novembre Lab}, UCLA \\
+\vspace{-0.5cm}
 
-\vspace{-0.15cm}
 Senior Statistical Consultant \hfill March 2009 - December 2011 \\
 {Statistical Consulting Center}, UCLA \\
+\vspace{-0.50cm}
 
-\vspace{-0.15cm}
 Graduate Teaching Assistant \hfill September 2006 - July 2010 \\
 {Dept. of Ecology and Evolutionary Biology, Dept. of Statistics}, UCLA \\
 
-\vspace{4mm}
+\vspace{3mm}
 
 \section{\sc Teaching}
 
@@ -102,12 +118,13 @@ Sta 112 - Better Living through Data Science - \href{http://stat.duke.edu/~cr173
 
 Sta 230 - Probability - \href{http://stat.duke.edu/courses/Spring12/sta104.1}{Fa 12}, \href{https://stat.duke.edu/~cr173/Sta230_Sp14/}{Sp 14}
 
-Sta 323 - Statistical Computing - \href{http://stat.duke.edu/~cr173/Sta323_Sp16/}{Sp 16}, \href{http://stat.duke.edu/~cr173/Sta323_Sp17/}{Sp 17}, \href{http://stat.duke.edu/~cr173/Sta323_Sp18/}{Sp 18}
+Sta 323 - Statistical Computing - \href{http://stat.duke.edu/~cr173/Sta323_Sp16/}{Sp 16}, \href{http://stat.duke.edu/~cr173/Sta323_Sp17/}{Sp 17}, \href{http://stat.duke.edu/~cr173/Sta323_Sp18/}{Sp 18}, Sp 19
 
-Sta 444 / 644 - Spatio-Temporal Modeling - \href{http://stat.duke.edu/~cr173/Sta444_Sp17/}{Sp 17}, \href{http://stat.duke.edu/~cr173/Sta444_Sp18/}{Sp 18}
+Sta 444 / 644 - Spatio-Temporal Modeling - \href{http://stat.duke.edu/~cr173/Sta444_Sp17/}{Sp 17}, \href{http://stat.duke.edu/~cr173/Sta444_Sp18/}{Sp 18}, \href{http://stat.duke.edu/~cr173/Sta444_Fa18/}{Fa 18}
 
-Sta 523 - Statistical Programming - \href{https://stat.duke.edu/~cr173/Sta523_Fa14/}{Fa 14}, \href{https://stat.duke.edu/~cr173/Sta523_Fa15/}{Fa 15}, \href{https://stat.duke.edu/~cr173/Sta523_Fa16/}{Fa 16}, \href{https://stat.duke.edu/~cr173/Sta523_Fa17/}{Fa 17}
+Sta 523 - Statistical Programming - \href{https://stat.duke.edu/~cr173/Sta523_Fa14/}{Fa 14}, \href{https://stat.duke.edu/~cr173/Sta523_Fa15/}{Fa 15}, \href{https://stat.duke.edu/~cr173/Sta523_Fa16/}{Fa 16}, \href{https://stat.duke.edu/~cr173/Sta523_Fa17/}{Fa 17}, \href{https://stat.duke.edu/~cr173/Sta523_Fa18/}{Fa 18}
 
+Sta 790 - Advanced Statistical Computing - Sp 19
 
 \pagebreak
 

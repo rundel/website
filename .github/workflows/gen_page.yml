@@ -1,0 +1,45 @@
+on:
+  push:
+    branches: master
+
+name: gen_io_page
+
+jobs:
+  gen_page:
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+    steps:
+     
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib/actions/setup-pandoc@master
+      
+      - name: Install tools
+        run: |
+          brew install hugo rsync
+
+      - name: Build Site
+        run: |
+          make
+      
+      - name: Config git
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "noreply@github.com"
+      
+      - name: Clone github.io page
+        run: |
+          git clone "https://$API_TOKEN_GITHUB@github.com/rundel/rundel.github.io.git"
+
+      - name: Sync changes
+        run: |
+          rsync --recursive --delete --exclude=".*" public/ rundel.github.io/
+
+      - name: Commit and push changes
+        run: |
+          cd statprog-s1-2020.github.io/
+          git add .
+          git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
+          git push

@@ -39,5 +39,5 @@ jobs:
         run: |
           cd rundel.github.io/
           git add .
-          git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
+          git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA"
           git push

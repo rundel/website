@@ -13,8 +13,6 @@ jobs:
     steps:
      
       - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@master
-      - uses: r-lib/actions/setup-pandoc@master
       
       - name: Install tools
         run: |
@@ -39,7 +37,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          cd statprog-s1-2020.github.io/
+          cd rundel.github.io/
           git add .
           git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
           git push

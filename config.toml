@@ -1,6 +1,6 @@
 baseurl = "/"
 title = ""
-copyright = "&copy; 2018 Colin Rundel"
+copyright = "&copy; 2021 Colin Rundel"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -18,9 +18,11 @@ defaultContentLanguageInSubdir = false
   organization = "Department of Statistical Science, Duke University"
   organization_url = "https://www.stat.duke.edu"
   avatar = "colin.png"
-  email = "rundel@gmail.com"
-  address = "204 Old Chemistry Building, Duke University, Durham, North Carolina, 27708, USA"
-  office_hours = "Monday 12:00 to 2:00 pm or by appointment"
+  email = "rundel@gmail.com, colin.rundel@duke.edu"
+  address = """204 Old Chemistry Building,
+  Duke University, Durham,
+  North Carolina, 27708, USA"""
+  office_hours = "By appointment"
   phone = ""
   skype = ""
   telegram = ""
@@ -45,13 +47,18 @@ defaultContentLanguageInSubdir = false
 
   [[params.social]]
     icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/rundel"
+    icon_pack = "fab"
+    link = "https://twitter.com/rundel"
 
   [[params.social]]
     icon = "github"
+    icon_pack = "fab"
+    link = "https://github.com/rundel"
+
+  [[params.social]]
+    icon = "file"
     icon_pack = "fa"
-    link = "//github.com/rundel"
+    link = "cv/Rundel-CV.pdf"
 
 
 [[menu.main]]
@@ -70,6 +77,11 @@ defaultContentLanguageInSubdir = false
   url = "#publications"
   weight = 3
 
+  [[menu.main]]
+  name = "Software"
+  url = "#software"
+  weight = 3.5
+
 [[menu.main]]
   name = "Talks"
   url = "#talks"
@@ -80,6 +92,11 @@ defaultContentLanguageInSubdir = false
   name = "Contact"
   url = "#contact"
   weight = 5
+
+[[menu.main]]
+  name = "CV"
+  url = "cv/Rundel-CV.pdf"
+  weight = 6
  
 # Configure the English version of the website.
 [languages.en]

@@ -11,9 +11,9 @@
     {{ with $page.Params.Content }}<p>{{ . | markdownify }}</p>{{ end }}
 
     <ul class="fa-ul">
-      {{ $pubs := $.Site.GetPage "section" "publication" }}
+      {{ $pubs := $.Site.GetPage "section" "software" }}
       {{ range $pubs.Pages }}
-      {{ partial "publication_li" . }}
+      {{ partial "software_li" . }}
       {{ end }}
     </ul>
 

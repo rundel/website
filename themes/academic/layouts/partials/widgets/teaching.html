@@ -1,27 +1,36 @@
 {{ $ := .root }}
 {{ $page := .page }}
-{{ $pubs_len := len (where $.Data.Pages "Type" "publication") }}
 
 <!-- Publications widget -->
 <div class="row">
   <div class="col-xs-12 col-md-4 section-heading">
-    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    <h1>{{ with $page.Params.Title }}{{ . | markdownify }}{{ end }}</h1>
     {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
   </div>
   <div class="col-xs-12 col-md-8">
-    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ with $page.Params.Content }}<p>{{ . | markdownify }}</p>{{ end }}
 
     <h3>Current course(s):</h3>
     <ul class="fa-ul">
-      {{ range (where $.Data.Pages "Type" "cur_teaching") }}
-      {{ partial "teaching_li" . }}
+      {{ $curt := $.Site.GetPage "section" "cur_teaching" }}
+      {{ range $curt.Pages }}
+        {{ partial "teaching_li" . }}
       {{ end }}
     </ul>
 
-    <h3>Previous courses:</h3>
+    <h3>Previous courses (Duke):</h3>
     <ul class="fa-ul">
-      {{ range (where $.Data.Pages "Type" "prev_teaching") }}
-      {{ partial "teaching_li" . }}
+      {{ $prevt := $.Site.GetPage "section" "prev_teaching" }}
+      {{ range $prevt.Pages }}
+        {{ partial "teaching_li" . }}
+      {{ end }}
+    </ul>
+
+    <h3>Previous courses (Univ of Edinburgh):</h3>
+    <ul class="fa-ul">
+      {{ $prevt := $.Site.GetPage "section" "prev_uoe_teaching" }}
+      {{ range $prevt.Pages }}
+        {{ partial "teaching_li" . }}
       {{ end }}
     </ul>
 

@@ -58,7 +58,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "file"
     icon_pack = "fa"
-    link = "cv/Rundel-CV.pdf"
+    link = "CV/Rundel-CV.pdf"
 
 
 [[menu.main]]
@@ -95,7 +95,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "CV"
-  url = "cv/Rundel-CV.pdf"
+  url = "CV/Rundel-CV.pdf"
   weight = 6
  
 # Configure the English version of the website.

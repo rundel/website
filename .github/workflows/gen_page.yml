@@ -33,11 +33,12 @@ jobs:
 
       - name: Sync changes
         run: |
-          rsync --recursive --delete --exclude=".*" public/ rundel.github.io/
+          rsync -a --delete --exclude=".*" public/ rundel.github.io/
 
       - name: Commit and push changes
         run: |
           cd rundel.github.io/
+          git status
           git add .
           git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA"
           git push

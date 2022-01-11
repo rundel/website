@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.3)  10 NOV 2021 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.3)  11 JAN 2022 10:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**/Users/rundel/Desktop/Website/static/CV/Rundel-CV.tex
-(/Users/rundel/Desktop/Website/static/CV/Rundel-CV.tex
+**/Users/rundel/Desktop/Website/static/cv/Rundel-CV.tex
+(/Users/rundel/Desktop/Website/static/cv/Rundel-CV.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (/Users/rundel/Desktop/Website/static/CV/res.
+L3 programming layer <2021-02-18> (/Users/rundel/Desktop/Website/static/cv/res.
 cls
 Document Style `res' <26 Sep 89>.
 Document Class: res 2000/05/19 v1.4b Resume class
@@ -36,7 +36,7 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \resumewidth=\dimen140
 \@columnwidth=\dimen141
 \c@numberofcolumns=\count187
-) (/Users/rundel/Desktop/Website/static/CV/settings.tex) (/usr/local/texlive/20
+) (/Users/rundel/Desktop/Website/static/cv/settings.tex) (/usr/local/texlive/20
 21/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -202,7 +202,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count198
 \l__pdf_internal_box=\box47
-) (/Users/rundel/Desktop/Website/static/CV/Rundel-CV.aux)
+) (/Users/rundel/Desktop/Website/static/cv/Rundel-CV.aux)
 \openout1 = `Rundel-CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -255,8 +255,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
 LaTeX Info: Redefining \nameref on input line 39.
-(/Users/rundel/Desktop/Website/static/CV/Rundel-CV.out) (/Users/rundel/Desktop/
-Website/static/CV/Rundel-CV.out)
+(/Users/rundel/Desktop/Website/static/cv/Rundel-CV.out) (/Users/rundel/Desktop/
+Website/static/cv/Rundel-CV.out)
 \@outlinefile=\write3
 \openout3 = `Rundel-CV.out'.
 
@@ -312,7 +312,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
 
-[4] (/Users/rundel/Desktop/Website/static/CV/Rundel-CV.aux)
+[4] (/Users/rundel/Desktop/Website/static/cv/Rundel-CV.aux)
 Package rerunfilecheck Info: File `Rundel-CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -334,11 +334,11 @@ cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/rundel/Desktop/Website/static/CV/Rundel-CV.pdf (4 page
-s, 134331 bytes).
+Output written on /Users/rundel/Desktop/Website/static/cv/Rundel-CV.pdf (4 page
+s, 134546 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 144 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  5 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

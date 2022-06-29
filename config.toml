@@ -14,7 +14,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Colin Rundel"
-  role = "Assistant Professor of the Practice"
+  role = "Associate Professor of the Practice"
   organization = "Department of Statistical Science, Duke University"
   organization_url = "https://www.stat.duke.edu"
   avatar = "colin.png"

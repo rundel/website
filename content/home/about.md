@@ -28,6 +28,6 @@ weight = 1
 
 # About me
 
-I am an associate professor of the practice in Statistical Science at Duke university. My research interests include applied spatial statistics with an emphasis on Bayesian statistics and computational methods.
+I am an associate professor of the practice in Statistical Science at Duke University. My research interests include applied spatial statistics with an emphasis on Bayesian statistics and computational methods. My other focus is the development of pedagogy for teaching statistical computing and data science at the undergraduate and graduate levels. I am also interested in the support and deployment of the computational infrastructure necessary for teaching in these areas.
 
 

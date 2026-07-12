@@ -1,5 +1,5 @@
 +++
-date = "2014-04-01"
+date = "2015-04-01"
 title = "Geospatial data and the R ecosystem"
 event = "Duke SSRI DABSS Seminar"
 

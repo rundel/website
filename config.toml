@@ -77,7 +77,7 @@ defaultContentLanguageInSubdir = false
   url = "#publications"
   weight = 3
 
-  [[menu.main]]
+[[menu.main]]
   name = "Software"
   url = "#software"
   weight = 3.5

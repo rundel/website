@@ -1,5 +1,5 @@
 REMOTEUSER ?= cr173
-REMOTEHOST ?= monster.stat.duke.edu
+REMOTEHOST ?= hypatia.stat.duke.edu
 REMOTEDIR ?= ~/.public_html/
 REMOTE ?= $(REMOTEUSER)@$(REMOTEHOST):$(REMOTEDIR)
 

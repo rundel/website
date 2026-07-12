@@ -7,13 +7,10 @@ name: gen_io_page
 jobs:
   gen_page:
     runs-on: macOS-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
     steps:
-     
-      - uses: actions/checkout@v2
-      
+
+      - uses: actions/checkout@v4
+
       - name: Install tools
         run: |
           brew install hugo rsync
@@ -21,15 +18,22 @@ jobs:
       - name: Build Site
         run: |
           make
-      
+
       - name: Config git
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "noreply@github.com"
-      
+
+      - name: Setup deploy key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.IO_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
       - name: Clone github.io page
         run: |
-          git clone "https://$API_TOKEN_GITHUB@github.com/rundel/rundel.github.io.git"
+          git clone git@github.com:rundel/rundel.github.io.git
 
       - name: Sync changes
         run: |
@@ -38,7 +42,10 @@ jobs:
       - name: Commit and push changes
         run: |
           cd rundel.github.io/
-          git status
           git add .
-          git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to publish"
+          else
+            git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA"
+            git push
+          fi

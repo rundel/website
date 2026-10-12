@@ -1,2 +1,9 @@
 public/
 .Rproj.user/
+.DS_Store
+static/CV/*.aux
+static/CV/*.out
+static/CV/*.log
+static/CV/*.fls
+static/CV/*.fdb_latexmk
+static/CV/*.synctex.gz

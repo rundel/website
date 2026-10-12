@@ -1,6 +1,6 @@
 REMOTEUSER ?= cr173
 REMOTEHOST ?= hypatia.stat.duke.edu
-REMOTEDIR ?= ~/.public_html/
+REMOTEDIR ?= /home/vis/cr173/.public_html/
 REMOTE ?= $(REMOTEUSER)@$(REMOTEHOST):$(REMOTEDIR)
 
 all: public/index.html static/CV/Rundel-CV.pdf
